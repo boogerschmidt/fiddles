@@ -20,7 +20,7 @@
 			$( this ).on( 'click', function( e )
 			{
 				var item = $( this );
-				if( item[ 0 ] != curItem[ 0 ] )
+				if( item.data("doubletaptogo-enabled") && item[ 0 ] != curItem[ 0 ] )
 				{
 					e.preventDefault();
 					curItem = item;
